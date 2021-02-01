@@ -1,0 +1,195 @@
+/* 轮播占一整屏幕 */
+html,
+body,
+.bannerWrap {
+    height: 100%;
+
+}
+
+.bannerWrap {
+    position: relative;
+}
+
+.swiper-container {
+    height: 100%;
+    width: 100%;
+}
+
+#Slide1 {
+    background: url("../images/hero-bg-2.jpg") center center/cover no-repeat;
+}
+
+#Slide2 {
+    background: url("../images/hero-bg-3.jpg") center center/cover no-repeat;
+}
+
+#Slide3 {
+    background: url("../images/hero-bg-4.jpg") center center/cover no-repeat;
+}
+
+/* 公用版心 */
+.md {
+    width: 1080px;
+    padding: 0px 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.headBox {
+    /* 层级原因,出来了但是层级不够被覆盖了 */
+    position: absolute;
+    left: 0;
+    top: 14px;
+    height: 56px;
+    width: 100%;
+    z-index: 998;
+    background-color: pink;
+}
+
+.headBoxIn {
+
+    height: 56px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 100px;
+    height: 37px;
+    float: left;
+}
+
+.navBox {
+    float: right;
+    height: 100%;
+}
+
+.navBox a {
+
+    float: left;
+    font-size: 14px;
+    height: 56px;
+    line-height: 56px;
+    padding: 0 20px;
+}
+
+/* 有宽有高出现了,但是不显示,可能是层级问题 */
+.advBox {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    z-index: 998;
+
+}
+
+/* h1默认有个自身高度,使用高度设置不发生变化的话需要写一个,line-height:1; */
+.advBoxIn h1 {
+    font-size: 66px;
+    margin-bottom: 20px;
+    color: #fff;
+    line-height: 1;
+
+}
+
+.advBox a {
+    height: 57px;
+    line-height: 57px;
+    width: 295px;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 22px;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+}
+
+/* 推荐 */
+
+.recomment li {
+    float: left;
+    width: 25%;
+    height: 258px;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    border-top-width: 2px;
+    background: url("../images/promo-01.jpg") center center/cover no-repeat;
+}
+
+.recomment li a {
+    display: block;
+    height: 258px;
+    widows: 100%;
+}
+
+.recomment:first-child {
+    border-left: none;
+}
+
+.recomment:last-child {
+    border-right: none;
+}
+
+.recomment li h3 {
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    height: 34px;
+    line-height: 34px;
+    padding-top: 30px;
+}
+
+.feetIn{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.feetIn li:first-child{
+    flex: 1;
+    height: 50px;
+    display: flex;
+  
+    align-items: center;
+    
+}
+.feetIn li:nth-child(2){
+    flex: 1;
+    height: 50px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    
+}
+.feetIn li:last-child{
+    flex: 1;
+    height: 50px;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    
+}
+.feetIn li .icon{
+    margin-right: 20px;
+    height: 50px;
+    width: 50px;
+}
+.feetIn li .icon1{
+  
+    background:url("../images/icon-wechat.png") center center/contain no-repeat;
+    
+
+}
+.feetIn li .icon2{
+    background:url("../images/icon-rp.png") center center/contain no-repeat;
+    
+
+}
+.feetIn li .icon3{
+    background:url("../images/icon-credit.png") center center/contain no-repeat;
+    
+
+}
+
+
